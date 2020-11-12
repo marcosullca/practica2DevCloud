@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{home} !-d
+RewriteCond %{home}.html -f
+RewriteRule ^(.*)$ $1.html
